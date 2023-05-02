@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sc_logo {
+  width: 150px;
+}
+
+.d4l_logo {
+  width: 170px;
+}
+
+.proceed-btn {
+  text-transform: uppercase;
+}
+
+.getQuote-btn {
+  text-transform: capitalize;
+}
+
+.proceed-btn,
+.getQuote-btn {
+  background: #0072a9 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 15px;
+  max-width: 244px;
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.94px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 15px 0;
+  border: 0;
+}
+
+.proceed-btn:hover,
+.proceed-btn:focus,
+.proceed-btn:active,
+.getQuote-btn:hover,
+.getQuote-btn:focus,
+.getQuote-btn:active {
+  background: #0079be;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: none;
+  outline: none;
+}
+.form-control[readonly] {
+  background-color: #F6F8FC;
+}
+@media (max-width: 991.98px) {
+  .sc_logo {
+    width: 120px;
+    margin-left: 20px;
+  }
+
+  .d4l_logo {
+    width: 160px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .sc_logo {
+    width: 100px;
+    margin-left: 0px;
+  }
+
+  .d4l_logo {
+    width: 150px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 575.98px) {
+  .proceed-btn,
+  .getQuote-btn {
+    max-width: unset;
+  }
+}
